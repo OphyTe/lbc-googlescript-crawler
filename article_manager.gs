@@ -52,7 +52,7 @@ function processArticle(articleData, oldLastArtIdsTab, searchRowIndex, currentSe
         //var imgSrc = 'http:' + articleData.substring(imgStartIndex, imgEndIndex);
       var imgSrc = getAttrValue('data-imgSrc', articleData);
       if (imgSrc != '') {
-        imgSrc = 'http:' + imgSrc;
+        // imgSrc = 'http:' + imgSrc;
         log("imgSrc = " + imgSrc, levels.debug);
         body = body + "<br/><a href=\"" + mobileLink + '"><img src="' + imgSrc + '"/></a>';
       } else {
